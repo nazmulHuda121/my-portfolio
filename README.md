@@ -1,35 +1,43 @@
 # AstroZen - Personal Portfolio Website
 
-AstroZen is a minimalist, accessible and responsive portfolio template for your personal portfolio website. It is built with Astro and TailwindCSS.
+AstroZen is a modern, minimalist, and fully responsive personal portfolio template built with **Astro** and **TailwindCSS**. It is designed to help developers and designers showcase their work, skills, and experience in a clean and professional way.
 
-![zen-og](https://github.com/user-attachments/assets/7a72aaae-6652-4cd0-becc-8e6a3c224993)
+> ⚠️ **Note:** All content, names, images, and examples in this template are fictitious. Replace them with your own personal information for real deployment.
 
-> [!NOTE]
-> The information contained in this template, including names, images, and content, is entirely fictitious and is intended solely to give the design a realistic appearance. Any coincidence with real-life people, events, or situations is purely coincidental. It is recommended that you replace this information with your own information.
+---
 
 ## 🔥 Features
 
-- [x] Minimalist design. clean and simple
-- [x] Mobile-first responsive layout
-- [x] SEO-friendly and accessible
-- [x] Easy to customize with a single configuration file
+- **Minimalist Design:** Clean, elegant, and user-friendly layout.
+- **Responsive & Mobile-First:** Looks perfect on all devices.
+- **SEO & Accessibility Friendly:** Structured for optimal search engine ranking.
+- **Easy Configuration:** Single `config` file to update site content.
+- **Modern Tech Stack:** Built using **Astro**, **TailwindCSS**, **TypeScript**, and modern frontend best practices.
 
-## ✅ Lighthouse Score
+---
 
-![performance](https://github.com/user-attachments/assets/4f95e2ca-03f9-4996-9e34-dcd179194c58)
+## 🛠 Technologies Used
+
+- **Frontend:** HTML5, CSS3, TailwindCSS, JavaScript, Astro
+- **Components & UI:** Astro components, reusable sections, responsive layouts
+- **Optional Backend / Fullstack Extensions:** React, Node.js, Express, Firebase, MongoDB (if extended)
+
+---
 
 ## 🚀 Getting Started
 
-Clone this repository to your local machine using Git.
+Follow these steps to get the project running locally:
 
-```scheme
-git clone https://github.com/immois/astro-zen.git
+```bash
+# Clone the repository
+git clone https://github.com/your-username/astro-zen.git
+
+# Navigate into the project folder
 cd astro-zen
-```
 
-| Command        | Action                                       |
-| :------------- | :------------------------------------------- |
-| `pnpm install` | Installs dependencies                        |
-| `pnpm dev`     | Starts local dev server at `localhost:4321`  |
-| `pnpm build`   | Build your production site to `./dist/`      |
-| `pnpm preview` | Preview your build locally, before deploying |
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+```
