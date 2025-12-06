@@ -1,23 +1,20 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "K.M Nazmul Huda — Web Developer",
+  author: "nazmulhuda",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+    "Web Developer based in Narail, BD. I specialize in UI design, web  application development and maintenance.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/naz.png",
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/nazmul-khan12/" },
+    { text: "Github", href: "https://github.com/nazmulHuda121" },
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://astro-zen.vercel.app",
@@ -25,73 +22,60 @@ export const SITE_CONFIG: SiteConfig = {
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "K.M Nazmul Huda",
+    specialty: "Junior Web Developer",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      "Developer based in Narail, Bangladesh. Frontend developer specializing in React, crafting responsive and interactive web apps that deliver smooth user experiences.",
+    email: "nazmul.khan121@gmail.com",
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "TubeOnAI",
+      position: "Landing Page Customization (WordPress)",
+      startDate: "April 2023",
+      endDate: "January 2024",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Customized and optimized high-conversion landing pages using WordPress, Elementor, and Gutenberg, ensuring fast performance and pixel-perfect design.",
+        "Improved page load speed by up to 35% through layout optimization, image compression, and SEO-friendly structure—boosting Core Web Vitals scores.",
+        "Converted Figma/Adobe XD designs into responsive, visually consistent landing pages with smooth animations and clean UI components.",
+        "Collaborated with the marketing team to apply conversion-focused layouts, increasing user engagement and improving lead conversion by 25%.",
+        "Integrated and optimized third-party plugins (forms, sliders, analytics, subscription tools) ensuring compatibility and minimal performance impact.",
+        "Maintained brand consistency and enhanced user experience by fixing UI issues, improving responsiveness, and ensuring cross-browser support.",
       ],
-    },
-    {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
-      summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
-      ],
-    },
-    {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
-      summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
     },
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
+      name: "Rental Wheel",
+      summary:
+        "A modern car rental platform featuring real-time availability, booking badges, and a clean dashboard-driven UX for seamless vehicle rentals.",
+      linkPreview: "https://brilliant-quokka-dc81d2.netlify.app/",
+      linkSource:
+        "https://github.com/nazmulHuda121/B12_A10_RentWheel_0008_client",
+      image: "/rental.png",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
+      name: "Gadget Store",
+      summary:
+        "A sleek e-commerce app with dynamic product filtering, cart management, and secure authentication—built for a smooth and responsive shopping experience.",
+      linkPreview: "https://gadget-store-client.vercel.app/",
+      linkSource: "https://github.com/nazmulHuda121/gadget_store_client",
+      image: "/gadget.png",
     },
     {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
+      name: "Hero Apps",
+      summary:
+        "A social media app inspired by Instagram, featuring photo sharing, feeds, and user interaction.",
+      linkPreview: "https://clinquant-yeot-849fb2.netlify.app/",
+      linkSource: "https://github.com/nazmulHuda121/B12A08_Hero_Apps",
+      image: "/hero.png",
     },
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
-
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+      Hi, I’m K.M Nazmul Huda, a passionate Frontend and Fullstack Developer specializing in React and the MERN stack. I build modern, responsive, and interactive web applications that are both user-friendly and scalable. I enjoy turning complex problems into clean, maintainable code, and creating seamless digital experiences. Constantly learning new technologies, I aim to craft solutions that not only look great but also perform flawlessly. My goal is to help businesses grow online by delivering high-quality web applications tailored to their needs.
     `,
-    image: "/alejandro-big.jpg",
+    image: "/about.png",
   },
 };
 

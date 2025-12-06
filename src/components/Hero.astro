@@ -5,9 +5,9 @@ type Props = HeroProps;
 const { name, specialty, summary, email } = Astro.props;
 ---
 
-<section class="py-24 md:py-32" id="#hero">
+<section class="py-24 md:py-32" id="hero">
   <h1
-    class="mb-1.5 font-serif text-7xl font-bold tracking-tightest text-white sm:text-8xl md:mb-0 md:text-9xl"
+    class="mb-1.5 font-serif text-7xl font-bold tracking-tightest text-white sm:text-8xl md:mb-0 md:text-8xl"
   >
     {name}
   </h1>
@@ -22,6 +22,17 @@ const { name, specialty, summary, email } = Astro.props;
 
   <a
     class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
-    href={`mailto:${email}`}>Get in Touch</a
+    href={`mailto:${email}`}
   >
+    Get in Touch
+  </a>
+
+  <a
+    class="ml-3 inline-block rounded-full bg-gray-100 px-8 py-5 text-sm leading-5 font-bold text-primary"
+    href="https://drive.google.com/file/d/1xz4QIzi4PnWONy_yqYM6lj_JVZa8SsiL/view?usp=drive_link"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Download CV
+  </a>
 </section>
