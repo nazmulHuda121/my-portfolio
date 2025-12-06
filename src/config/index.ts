@@ -54,14 +54,7 @@ export const SITE_CONTENT: SiteContent = {
         "https://github.com/nazmulHuda121/B12_A10_RentWheel_0008_client",
       image: "/rental.png",
     },
-    {
-      name: "Gadget Store",
-      summary:
-        "A sleek e-commerce app with dynamic product filtering, cart management, and secure authentication—built for a smooth and responsive shopping experience.",
-      linkPreview: "https://gadget-store-client.vercel.app/",
-      linkSource: "https://github.com/nazmulHuda121/gadget_store_client",
-      image: "/gadget.png",
-    },
+
     {
       name: "Hero Apps",
       summary:
@@ -69,6 +62,14 @@ export const SITE_CONTENT: SiteContent = {
       linkPreview: "https://clinquant-yeot-849fb2.netlify.app/",
       linkSource: "https://github.com/nazmulHuda121/B12A08_Hero_Apps",
       image: "/hero.png",
+    },
+    {
+      name: "Gadget Store",
+      summary:
+        "A sleek e-commerce app with dynamic product filtering, cart management, and secure authentication—built for a smooth and responsive shopping experience.",
+      linkPreview: "https://gadget-store-client.vercel.app/",
+      linkSource: "https://github.com/nazmulHuda121/gadget_store_client",
+      image: "/gadget.png",
     },
   ],
   about: {

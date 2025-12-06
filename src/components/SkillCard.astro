@@ -1,0 +1,36 @@
+---
+interface Props {
+  skill: {
+    name: string;
+    level: string;
+  };
+}
+
+const { skill } = Astro.props;
+
+// map level to percentage
+const levelPercent =
+  skill.level === "Expert" || skill.level === "Strong"
+    ? 100
+    : skill.level === "Intermediate"
+      ? 70
+      : skill.level === "Comfortable"
+        ? 60
+        : skill.level === "Familiar"
+          ? 50
+          : 40;
+---
+
+<div class="mb-4 w-full">
+  <div class="mb-1 flex justify-between">
+    <span class="font-semibold text-white">{skill.name}</span>
+    <span class="text-sm text-neutral">{levelPercent}%</span>
+  </div>
+  <div class="h-4 w-full overflow-hidden rounded-full bg-neutral/20">
+    <div
+      class="h-4 rounded-full bg-primary transition-all duration-1000"
+      style={`width: ${levelPercent}%`}
+    >
+    </div>
+  </div>
+</div>

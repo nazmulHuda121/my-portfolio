@@ -1,0 +1,22 @@
+---
+import Section from "./Section.astro";
+import SkillCard from "./SkillCard.astro";
+import { SKILLS } from "../config/skills";
+
+const categories = ["Expertise", "Comfortable", "Familiar", "Soft Skills"];
+---
+
+<Section text="My Skills" href="skills">
+  {
+    categories.map((category) => (
+      <div class="mb-12">
+        <h2 class="mb-6 text-xl font-bold text-primary">{category}</h2>
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {SKILLS.filter((s) => s.category === category).map((skill) => (
+            <SkillCard skill={skill} />
+          ))}
+        </div>
+      </div>
+    ))
+  }
+</Section>
