@@ -10,6 +10,7 @@ export const SITE_CONFIG: SiteConfig = {
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
+    { text: "Skills", href: "#skills" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
