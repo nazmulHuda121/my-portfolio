@@ -1,4 +1,74 @@
 @import "tailwindcss";
+/* Floating Glass Balls Background */
+.glass-balls {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.ball {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(4, 155, 231, 0.9),
+    rgba(255, 255, 255, 0.05)
+  );
+  border-radius: 50%;
+  backdrop-filter: blur(25px);
+  filter: drop-shadow(0 0 20px rgba(196, 169, 169, 0.8));
+  animation: floatBall 12s ease-in-out infinite;
+}
+
+.ball:nth-child(2) {
+  width: 140px;
+  height: 140px;
+  animation-duration: 15s;
+}
+
+.ball:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  animation-duration: 18s;
+}
+
+/* Floating animation */
+@keyframes floatBall {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(80px, -40px);
+  }
+  50% {
+    transform: translate(-60px, 60px);
+  }
+  75% {
+    transform: translate(40px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
 
 @theme {
   --font-sans: "Be Vietnam Pro", system-ui, sans-serif;

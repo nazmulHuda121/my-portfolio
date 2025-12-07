@@ -11,9 +11,89 @@ import "../styles/global.css";
 ---
 
 <Layout>
+  <!-- 🔵 Soft Bubbles Background -->
+  <div class="soft-bubbles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
   <Hero {...SITE_CONTENT.hero} />
   <Experience experience={SITE_CONTENT.experience} />
   <Projects projects={SITE_CONTENT.projects} />
   <Skills />
   <About {...SITE_CONTENT.about} name={SITE_CONTENT.hero.name} />
+
+  <style>
+    .soft-bubbles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .soft-bubbles span {
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background: rgba(208, 178, 68, 0.77);
+      box-shadow: 0 0 20px rgba(197, 214, 44, 0.3);
+      border-radius: 50%;
+      backdrop-filter: blur(6px);
+      animation: bubble 10s linear infinite;
+      bottom: -100px;
+    }
+
+    .soft-bubbles span:nth-child(1) {
+      left: 10%;
+      width: 60px;
+      height: 60px;
+      animation-delay: 0s;
+    }
+
+    .soft-bubbles span:nth-child(2) {
+      left: 35%;
+      width: 30px;
+      height: 30px;
+      animation-delay: 2s;
+    }
+
+    .soft-bubbles span:nth-child(3) {
+      left: 55%;
+      width: 70px;
+      height: 70px;
+      animation-delay: 4s;
+    }
+
+    .soft-bubbles span:nth-child(4) {
+      left: 75%;
+      width: 45px;
+      height: 45px;
+      animation-delay: 1s;
+    }
+
+    .soft-bubbles span:nth-child(5) {
+      left: 90%;
+      width: 35px;
+      height: 35px;
+      animation-delay: 3s;
+    }
+
+    @keyframes bubble {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(-800px) scale(1.8);
+        opacity: 0;
+      }
+    }
+  </style>
 </Layout>
