@@ -57,12 +57,12 @@ export const SITE_CONTENT: SiteContent = {
     },
 
     {
-      name: "Hero Apps",
+      name: "Blood Donate",
       summary:
-        "A social media app inspired by Instagram, featuring photo sharing, feeds, and user interaction.",
-      linkPreview: "https://clinquant-yeot-849fb2.netlify.app/",
-      linkSource: "https://github.com/nazmulHuda121/B12A08_Hero_Apps",
-      image: "/hero.png",
+        "A role-based blood donation web application with User/Donor, Volunteer, and Admin dashboards, enabling donor management, request monitoring, and system administration through a responsive and secure interface.",
+      linkPreview: "https://blood-donate-client-three.vercel.app/",
+      linkSource: "https://github.com/nazmulHuda121/Blood_Donate_client",
+      image: "/blood-donate.png",
     },
     {
       name: "Gadget Store",
